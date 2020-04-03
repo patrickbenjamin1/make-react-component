@@ -37,7 +37,11 @@ import * as React from 'react';
 
 import './myCoolComponent.scss';
 
-export const MyCoolComponent: React.FunctionComponent = () => {
+interface IMyCoolComponentProps {
+
+}
+
+export const MyCoolComponent: React.FunctionComponent<IMyCoolComponentProps> = () => {
     return (
         <div className="my-cool-component"></div>
     )

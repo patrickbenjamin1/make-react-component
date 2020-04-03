@@ -2,7 +2,11 @@ import * as React from 'react';
 
 import './COMPONENTLOWER.scss';
 
-export const COMPONENTUPPER: React.FunctionComponent = () => {
+interface ICOMPONENTUPPERProps {
+
+}
+
+export const COMPONENTUPPER: React.FunctionComponent<ICOMPONENTUPPERProps> = () => {
     return (
         <div className="COMPONENTDASH"></div>
     )
