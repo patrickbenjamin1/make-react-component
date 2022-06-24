@@ -1,13 +1,15 @@
 import * as React from 'react';
 
-import './COMPONENTLOWER.scss';
+import './COMPONENTCAMEL.scss';
 
-interface ICOMPONENTUPPERProps {
+interface ICOMPONENTPASCALProps {
 
 }
 
-export const COMPONENTUPPER: React.FunctionComponent<ICOMPONENTUPPERProps> = () => {
+export const COMPONENTPASCAL: React.FC<React.PropsWithChildren<ICOMPONENTPASCALProps>> = ({ children }) => {
     return (
-        <div className="COMPONENTDASH"></div>
+        <div className="COMPONENTKEBAB">
+            {children}
+        </div>
     )
 }
